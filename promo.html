@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата тарифа Промо</title>
+    <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css?v=1.23.0">
+</head>
+<body>
+    <h2>Оплата тарифа "Промо"</h2>
+    <form class="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8">
+        <input name="customerNumber" type="hidden" value="оплата тарифа Промо">
+        <input name="shopId" type="hidden" value="1070998">
+        <div class="ym-payment-btn-block">
+            <div class="ym-input-icon-rub ym-display-none">
+                <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input" type="number" step="any" value="249">
+            </div>
+            <button data-text="Заплатить" class="ym-btn-pay ym-result-price">
+                <span class="ym-text-crop">Заплатить</span>
+                <span class="ym-price-output"> 249,00&nbsp;₽</span>
+            </button>
+            <img src="https://yookassa.ru/integration/simplepay/img/iokassa-gray.svg?v=1.23.0" class="ym-logo" width="114" height="27" alt="ЮKassa">
+        </div>
+    </form>
+    <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js?v=1.23.0"></script>
+</body>
+</html>
